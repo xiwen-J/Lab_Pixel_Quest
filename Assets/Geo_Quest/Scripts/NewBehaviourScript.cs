@@ -26,7 +26,7 @@ public class NewBehaviourScript : MonoBehaviour
         
        if (Input.GetKeyDown(KeyCode.W))
         {
-           rb.velocity = new Vector2(rb.velocity.x, 10);
+           rb.linearVelocity = new Vector2(rb.linearVelocity.x, 10);
         }
         /*if (Input.GetKeyDown(KeyCode.A))
         {
@@ -44,7 +44,7 @@ public class NewBehaviourScript : MonoBehaviour
             //transform.position += new Vector3(1, 0, 0);
         }*/
         float xinput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(xinput * speed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(xinput * speed, rb.linearVelocity.y);
 
 
     }
